@@ -1,4 +1,4 @@
-import ExpensesOutput from "../components/ExpensesOutput"
+import ExpensesOutput from "../components/ExpensesOutput/ExpensesOutput"
 
 export default function RecentExpenses() {
     return (
