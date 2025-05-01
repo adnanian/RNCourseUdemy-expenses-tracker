@@ -11,10 +11,10 @@ export const ExpensesContext = createContext({
 function expensesReducer(state, action) {
     switch (action.type) {
         case 'SET':
-            return action.payload;
+            return action.payload.reverse();
         case 'ADD':
             const id = new Date().toString() + Math.random().toString(); // Demo unique id generator
-            return [{ ...action.payload, id: id }, ...state];
+            return [action.payload, ...state];
         case 'UPDATE':
             const updatableExpenseIndex = state.findIndex((expense) => expense.id === action.payload.id);
             const updatableExpense = state[updatableExpenseIndex];
@@ -23,6 +23,7 @@ function expensesReducer(state, action) {
             updatedExpenses[updatableExpenseIndex] = updatedItem;
             return updatedExpenses;
         case 'DELETE':
+            console.log('deleting');
             return state.filter((expense) => expense.id !== action.payload);
         default:
             return state;
