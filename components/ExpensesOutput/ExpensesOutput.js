@@ -3,6 +3,11 @@ import ExpensesSummary from "./ExpensesSummary";
 import ExpensesList from "./ExpensesList";
 import { GlobalStyles } from "../../constants/styles";
 
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
 export default function ExpensesOutput({ expenses, expensesPeriod, fallbackText }) {
     let content = <Text style={styles.infoText}>{fallbackText}</Text>
 

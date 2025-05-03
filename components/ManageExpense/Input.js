@@ -1,6 +1,11 @@
 import { StyleSheet, Text, TextInput, View } from "react-native";
 import { GlobalStyles } from "../../constants/styles";
 
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
 export default function Input({ label, style, textInputConfig, invalid }) {
     const inputStyles = [styles.input];
 

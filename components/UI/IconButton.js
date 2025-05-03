@@ -1,6 +1,11 @@
 import { Pressable, StyleSheet, View } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
 
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
 export default function IconButton({ icon, size, color, onPress }) {
     return (
         <Pressable

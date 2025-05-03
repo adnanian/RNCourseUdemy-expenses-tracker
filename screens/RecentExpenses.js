@@ -6,6 +6,10 @@ import { fetchExpenses } from "../util/http";
 import LoadingOverlay from "../components/UI/LoadingOverlay";
 import ErrorOverlay from "../components/UI/ErrorOverlay";
 
+/**
+ * 
+ * @returns 
+ */
 export default function RecentExpenses() {
     const [isFetching, setIsFetching] = useState(true);
     const [error, setError] = useState();

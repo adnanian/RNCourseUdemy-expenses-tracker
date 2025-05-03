@@ -30,6 +30,11 @@ function expensesReducer(state, action) {
     }
 }
 
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
 function ExpensesContextProvider({ children }) {
     const [expensesState, dispatch] = useReducer(expensesReducer, []);
 

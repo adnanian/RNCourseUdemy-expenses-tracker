@@ -5,6 +5,11 @@ import CustomButton from "../UI/CustomButton";
 import { getFormattedDate } from "../../util/date";
 import { GlobalStyles } from "../../constants/styles";
 
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
 export default function ExpenseForm({ onCancel, onSubmit, submitButtonLabel, defaultValues }) {
     const [inputs, setInputs] = useState({
         amount: {

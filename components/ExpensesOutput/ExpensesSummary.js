@@ -1,6 +1,11 @@
 import { View, Text, StyleSheet } from 'react-native';
 import { GlobalStyles } from '../../constants/styles';
 
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
 export default function ExpensesSummary({ expenses, periodName }) {
     const expensesSum = expenses.reduce((sum, expense) => {
         return sum + expense.amount;

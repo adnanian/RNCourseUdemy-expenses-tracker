@@ -3,6 +3,10 @@ import ExpensesOutput from "../components/ExpensesOutput/ExpensesOutput";
 import { useContext } from "react";
 import { ExpensesContext } from "../store/expenses-context";
 
+/**
+ * 
+ * @returns 
+ */
 export default function AllExpenses() {
     const expensesCtx = useContext(ExpensesContext);
 
