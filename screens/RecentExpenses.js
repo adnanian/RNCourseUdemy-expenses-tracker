@@ -23,7 +23,6 @@ export default function RecentExpenses() {
                 expensesCtx.setExpenses(expenses);
             } catch (error) {
                 setError('Could not fetch expenses!');
-                console.log('error set');
             } finally {
                 setIsFetching(false);
             }
@@ -31,12 +30,8 @@ export default function RecentExpenses() {
         getExpenses();
     }, []);
 
-    function errorHandler() {
-        setError(null);
-    }
-
     if (error && !isFetching) {
-        return <ErrorOverlay message={error} onConfirm={errorHandler} />
+        return <ErrorOverlay message={error} />
     }
 
     if (isFetching) {
